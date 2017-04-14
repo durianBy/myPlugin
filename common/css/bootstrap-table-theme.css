@@ -1,0 +1,230 @@
+.fixed-table-container,
+.bootstrap-table .table,
+.bootstrap-table .table > thead > tr > th,
+.pagination > li > a,
+.pagination > li > span {
+    border-color: #E2E9ED;
+}
+
+.fixed-table-header,
+.fixed-table-header table th,
+.table > thead > tr > th {
+    background: #f3f5f9;
+}
+
+.table-th-divider .th-inner {
+    position: relative;
+}
+
+.table-th-divider .th-inner:before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    display: block;
+    width: 0;
+    height: 14px;
+    margin-top: -7px;
+    border-left: 1px solid #D9D9D9;
+    content: "";
+}
+
+.table-th-divider tr th:first-child .th-inner:before {
+    border: 0;
+}
+
+.table-striped > tbody > tr:nth-child(2n) > td,
+.table-striped > tbody > tr:nth-child(2n) > th {
+    background: #f3f5f9;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td,
+.table-striped > tbody > tr:nth-child(2n+1) > th {
+    background: #fff;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    border-left: 0;
+    border-right: 0;
+    border-color: #eaeff5;
+}
+
+.bootstrap-table .table > thead > tr > th {
+    border-bottom: 0;
+    vertical-align: middle;
+}
+
+.table.table-th-border > thead > tr > th {
+    border: 1px solid #E2E9ED;
+}
+
+.table.table-th-border > thead > tr > th:first-child {
+    border-left: 0;
+}
+
+.table > tbody > tr:hover > td {
+    background: #FCF5D8;
+}
+
+.table > tbody > tr.selected > td {
+    background: #FCF5D8;
+    color: #B65D19;
+    border-color: #F9BF8F;
+    border-top: 1px solid #F9BF8F;
+    border-bottom: 1px solid #F9BF8F;
+}
+
+.table > tbody > tr.selected > td a {
+    color: #B65D19;
+}
+
+.fixed-table-pagination div.pagination,
+.fixed-table-pagination .pagination-detail {
+    margin-bottom: 0;
+}
+
+.fixed-table-pagination .pagination-detail button{
+    height: 28px;
+    line-height: 14px;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+.table > tbody > tr.red td {
+    color: #FF5050;
+}
+
+/*.fixed-table-body .table > tbody > tr:last-child > td {*/
+/*border-bottom: 0;*/
+/*}*/
+
+/*.fixed-table-container table {*/
+    /*table-layout: auto;*/
+/*}*/
+
+.fixed-table-body .table td .badge {
+    position: absolute;
+    right: 10px;
+    background: #FB793F;
+    border-radius: 50%;
+}
+
+.fixed-table-body .table td.has-badge {
+    color: #FB793F;
+}
+
+.fixed-table-container thead th .th-inner,
+.fixed-table-container tbody td .th-inner {
+    padding: 6px 8px;
+    border-top: 1px solid #F9F9F9;
+    line-height: 1.6667;
+    color: #909090;
+}
+
+.fixed-table-container .bs-checkbox .th-inner {
+    padding: 6px 0;
+}
+
+.fixed-table-toolbar .search .form-control {
+    padding-right: 45px;
+}
+
+.fixed-table-toolbar .search:after {
+    font-family: 'icomoon';
+    content: "\e919";
+    display: block;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1em;
+}
+
+.fixed-table-toolbar .bars,
+.fixed-table-toolbar .search,
+.fixed-table-toolbar .columns {
+    margin-top: 0;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #13B0F7;
+    border-color: #13B0F7;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #13B0F7;
+}
+
+.table.no-border-b {
+    border-bottom: 0;
+}
+
+.bs-checkbox .checkbox-ui {
+    margin: 0 auto;
+}
+
+.checkbox-ui {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+}
+
+.checkbox-ui label {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    margin: 0;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 100;
+    color: #fff;
+    font-size: 8px;
+    line-height: 12px;
+    transition: .25s;
+    z-index: 0;
+}
+
+.checkbox-ui input[type="checkbox"] {
+    position: relative;
+    width: 14px;
+    height: 14px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.checkbox-ui input[type="checkbox"]:hover + label {
+    border-color: #f9ac20;
+}
+
+.checkbox-ui input[type="checkbox"]:checked + label {
+    background: #f9ac20;
+    border-color: #f9ac20;
+}
+
+.checkbox-ui input[type="checkbox"]:checked + label:before {
+    content: "\e013";
+}

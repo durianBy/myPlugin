@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.citySelect {
+    position: relative;
+    font-size: 14px;
+}
+
+.city-select-wrap {
+    overflow: hidden;
+}
+
+.city-select {
+    position: relative;
+    float: left;
+    border: 1px solid #cbd5dd;
+    border-left-width: 0;
+    padding: 6px 20px 6px 12px;
+    cursor: pointer;
+}
+
+.city-select-wrap .city-select:first-child {
+    border-left-width: 1px;
+    border-radius: 2px 0 0 2px;
+}
+
+.city-select-wrap .city-select:last-child,
+.city-select-wrap .city-select.last {
+    border-radius: 0 2px 2px 0;
+}
+
+.city-select .select-content {
+    display: block;
+    width: 70px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select-dropdown {
+    position: absolute;
+    right: 9px;
+    top: 11px;
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.disabled .select-dropdown {
+    border-color: #ccc transparent transparent transparent;
+}
+
+.city-select.disabled {
+    background: #f3f3f3;
+    border-color: #eaeaea;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.city-list-wrap {
+    position: absolute;
+    left: 0;
+    top: 34px;
+    width: 500px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #cbd5dd;
+    margin-top: -1px;
+    z-index: 9999;
+    display: none;
+}
+
+.city-list-wrap .city-list {
+    display: none;
+}
+
+.city-list {
+    overflow: hidden;
+}
+
+.city-list li {
+    float: left;
+    margin: 2px 10px;
+    cursor: pointer;
+}
+
+.city-list li a {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 2px;
+    line-height: 1em;
+    color: #333;
+    text-decoration: none;
+}
+
+.city-list li a:hover {
+    background: #fff8f3;
+    color: #f60;
+}
+
+.city-list li a.active,
+.city-list li a:active {
+    background: #f60;
+    color: #fff;
+}
+
+.city-list li a.disabled,
+.city-list li a.disabled:hover,
+.city-list li a.disabled:active {
+    color: #999;
+    background: none;
+    cursor: default;
+}
+
+.city-list-wrap .city-list:first-child li {
+    min-width: 70px;
+}
+
+.citySelect.opening .city-list-wrap {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    margin-top: 0;
+    border: 0;
+}
+
+.citySelect.opening .city-select .select-content {
+    width: 60px;
+}
+
+.citySelect.opening .city-select[data-type="3"] .select-content {
+    width: 209px;
+}

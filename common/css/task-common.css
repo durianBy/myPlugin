@@ -1,0 +1,1031 @@
+/*--------------------------*\
+    考评任务公共样式
+
+    @author chenguanbin
+    @date 2016-09-26
+\*--------------------------*/
+
+.task-detail-wrap {
+    position: relative;
+    display: none;
+    height: 100%;
+    background-color: #fff;
+}
+
+/* 任务图片列表 */
+.task-img-wrap {
+    position: relative;
+    height: 100%;
+    padding-right: 340px;
+}
+
+/* 有全部整改按钮 */
+.task-img-wrap.level1 {
+    padding-bottom: 50px;
+}
+
+.task-rect-wrap .task-img-wrap {
+    padding: 15px;
+}
+.task-img-list2{
+    height: 100%;
+    padding: 10px 0 10px 15px;
+}
+.task-img-list {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.zg-img-detail {
+    /* width: 100%; */
+    /* height: 100%; */
+    background: #fff;
+    position: absolute;
+    left: 5px;
+    right: 345px;
+    top: 5px;
+    bottom: 5px;
+    /* display: none; */
+}
+
+.task-camera {
+    margin-bottom: 6px;
+    padding: 10px 5px;
+}
+
+.task-camera.task-camera-inline {
+    display: inline-block;
+    width: 220px;
+}
+
+.task-camera.task-camera-inline>.task-camera-name {
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.task-camera-name {
+    height: 30px;
+    line-height: 30px;
+}
+
+.task-camera-imgs>img {
+    float: left;
+    width: 209px;
+    height: 118px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.task-camera-imgs .capture-failed{
+    float: left;
+    width: 209px;
+    height: 118px;
+    line-height: 123px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor:default;
+    background: #edf0f5;
+    font-size:45px;
+    color:#999;
+}
+/* 考评任务内容 */
+.task-content-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 340px;
+    height: 100%;
+    border-left: 1px solid #e9e9e9;
+}
+
+.task-content-wrap header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.task-content-wrap header span:not(:first-child) {
+    font-weight: bold;
+}
+
+.task-content-title {
+    padding: 5px 0 1px 0;
+    margin: 0 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.task-content-title span{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 5px;
+}
+.task-record-box{
+    position:absolute;
+    top:44px;
+    right:0;
+    left:0;
+    bottom:0;
+}
+.task-record-box.level2{
+    bottom:180px;
+}
+.task-record-box.level1{
+    bottom:55px;
+}
+
+.task-record-wrap-slim{
+    width:auto;
+    height:100%;
+}
+
+    /* 考评记录 */
+.task-record-wrap {
+    height: 100%;
+    padding-top:44px;
+}
+
+/* 有操作按钮 */
+.task-record-wrap.level1 {
+    padding-bottom: 50px;
+}
+
+/* 有操作按钮和意见textarea */
+.task-record-wrap.level2 {
+    padding-bottom: 170px;
+}
+
+.task-record {
+    height: 100%;
+    padding: 0 15px;
+    overflow-y: auto;
+}
+
+/* 处理意见头 */
+.ed-talkback-header {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.talkback-header-title {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #666;
+}
+
+.talkback-level {
+    margin-left: 20px;
+}
+
+/* 处理意见对话模块 */
+.talkback-module {
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* 处理意见模块的状态 */
+.talkback-status {
+    text-indent: 15px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+}
+.talkback-status.emphasize{
+    font-weight: bolder;
+}
+/* 处理时间 */
+.talkback-time {
+    text-align: left;
+    padding-left: 35px;
+    color: #999;
+}
+
+/* 处理人 */
+.talkback-user {
+    float: left;
+    max-width: 70px;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 处理意见(向右) */
+.talkback-chat {
+    position: relative;
+    display: block;
+    float: left;
+    max-width: 210px;
+    padding: 10px 15px;
+    margin: 5px 0 0 20px;
+    word-wrap: break-word;
+    color: #4c4c4c;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.talkback-chat::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #f2f2f2;
+}
+
+/* 处理意见(向右) */
+.talkback-module.talkback-right .talkback-user {
+    float: right;
+}
+
+.talkback-module.talkback-right .talkback-chat {
+    float: right;
+    margin: 5px 20px 0 0;
+}
+
+.talkback-module.talkback-right .talkback-chat::before {
+    left: auto;
+    right: -10px;
+}
+.talkback-module.talkback-right .talkback-time{
+    text-align:right;
+    padding-right: 35px;
+}
+
+.talkback-chat pre {
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft Yahei";
+    font-size: 12px;
+    color: #444;
+    border: none;
+    background-color: transparent;
+}
+
+/* 选中对话框组 */
+.task-talkback.active {
+   /* background-color: #f2f2f2;*/
+    border-left: 2px solid #FA9A4B;
+    box-shadow: 0 0 5px 3px #eee;
+    -webkit-box-shadow:0 0 5px 3px #eee;
+    -moz-box-shadow:0 0 5px 3px #eee;
+}
+.task-talkback>div:nth-child(2){
+    padding-top: 0;
+}
+/*.task-talkback.active .talkback-chat {
+    background-color: #fff;
+}
+
+.task-talkback.active .talkback-chat::before {
+    border-top-color: #fff;
+}*/
+
+/* 选中单个对话框 */
+.talkback-module.active {
+    background-color: #f2f2f2;
+}
+
+.talkback-module.active .talkback-chat {
+    background-color: #fff;
+}
+
+.talkback-module.active .talkback-chat::before {
+    border-top-color: #fff;
+}
+
+/* 整改意见 */
+.task-opinion {
+    padding: 5px 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+
+.task-opinion.level1 {
+    height: 55px;
+}
+
+.task-opinion.level2 {
+    height: 180px;
+}
+
+/* 由于ie10~11placeholder引起的auto validate，现在去掉相应的验证样式提示，直接在提交意见时给出提示*/
+.task-opinion textarea{
+    border-color:#f4e5c5 !important;
+}
+
+.task-opinion .form-control {
+    transition: none !important;
+    -webkit-transition:none !important;
+}
+
+.task-opinion .has-error .form-control:focus{
+    box-shadow: 0 0 3px 0px #ffd47a;
+}
+.task-opinion .help-block{
+    display:none !important;
+}
+/*ie10~11end*/
+.task-opinion textarea {
+    height: 110px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #333;
+    border-color: #f4e5c5;
+    background-color: #faf6e8;
+    outline: none;
+}
+
+.task-opinion textarea:hover {
+    border-color: #ffd47a;
+}
+
+.task-opinion textarea:focus {
+    border-color: #ffd47a;
+    box-shadow: 0 0 3px 0px #ffd47a;
+}
+
+/* 操作按钮 */
+.task-oprt {
+    padding: 8px 0;
+    text-align: center;
+}
+
+.task-oprt .btn {
+    width: 49%;
+}
+
+.task-oprt .large {
+    width: 97%;
+}
+
+/* 图片预览面板 */
+.task-img-preview-wrap,
+.task-img-patrol-wrap,
+.patrol-scrawl-wrap,
+.task-rect-wrap {
+    position: absolute;
+    left: 0;
+    right: 340px;
+    top: 36px;
+    bottom: 0;
+    display: none;
+    /*height: 100%;
+    width: 100%;
+    padding-top: 36px;
+    padding-right: 340px;*/
+    overflow: hidden;
+}
+
+.task-img-patrol-wrap,
+.task-rect-wrap {
+    z-index: 100;
+}
+
+.task-img-preview-wrap,
+.patrol-scrawl-wrap {
+    z-index: 1000;
+}
+
+/* 由于两边留白问题，需要再添加一层，有点烦 */
+.task-img-preview-wrap2,
+.task-img-patrol-wrap2,
+.patrol-scrawl-wrap2 {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.task-rect-wrap2 {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.task-img-preview {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #edf1f5;
+    z-index: 50;
+}
+
+.task-compare-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.task-img-preview img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+.task-img-preview img.broad {
+    width: auto;
+    height: 100%;
+}
+
+.task-img-preview img.narrow {
+    width: 100%;
+    height: auto;
+}
+
+/* 任务弹出层关闭按钮（之后用切图） */
+.preview-close-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 16px solid transparent;
+    border-top-color: #fb7d46;
+    border-right-color: #fb7d46;
+    cursor: pointer;
+}
+
+.preview-close-icon i {
+    top: -15px;
+    left: 1px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* 任务整改面板
+.task-rect-wrap {
+    position: relative;
+    display: block;
+    height: 100%;
+} */
+.task-img {
+    float: left;
+    width: 213px;
+    margin-top: 5px;
+    margin-right: 10px;
+    position: relative;
+}
+.task-img em.capture-tip{
+    position:absolute;
+    display: block;
+    top:0;
+    left:0;
+    width:auto;
+    height:26px;
+    line-height: 26px;
+    color: #ffeded;
+    background-color: #F55756;
+    border-bottom-right-radius: 13px;
+    border-top-right-radius: 13px;
+    padding: 0 14px 0 8px;
+}
+.task-img em.capture-tip.ok{
+    background-color: #16a816;
+}
+.task-img .capture-failed{
+    width: 213px;
+    height: 119px;
+    line-height: 123px;
+    text-align: center;
+    background: #edf0f5;
+    cursor:default;
+    font-size:45px;
+    color:#999;
+
+}
+.task-img img {
+    width: 213px;
+    height: 119px;
+    cursor: pointer;
+}
+
+.task-img label {
+    width: 180px;
+    line-height: 26px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-img span {
+    display: inline-block;
+    float: right;
+    line-height: 26px;
+    color: #fa9a4b;
+    cursor: pointer;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+
+.task-img span:hover {
+    color: #e87606;
+}
+
+.task-img span.disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+/* 全部整改行 */
+.rect-all-wrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 355px;
+}
+
+.rect-all-line {
+    height: 100%;
+    border-top: 1px solid #edf1f5;
+}
+
+.rect-all-btn {
+    display: inline-block;
+    width: 90px;
+    height: 32px;
+    line-height: 30px;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fa9a4b;
+    border: 1px solid #fa9a4b;
+    border-radius: 2px;
+    cursor: pointer;
+    -webkit-transition: color .2s ease, border-color .2s ease;
+    transition: color .2s ease, border-color .2s ease;
+}
+
+.rect-all-btn:hover {
+    color: #e87606;
+    border-color: #e87606;
+}
+
+.rect-all-btn.disabled:hover {
+    color: #ccc;
+    border-color: #eaeaea;
+}
+
+.task-compare-head {
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+.task-compare-box {
+    overflow: hidden;
+}
+
+.task-compare-before,
+.task-compare-now {
+    width: 48%;
+    float:left;
+}
+.task-compare-now{
+    margin-left: 2%;
+}
+.task-compare-before .title,
+.task-compare-now .title{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.task-compare-now .title{
+    color: #FA9A4B;
+    position: relative;
+}
+.task-compare-now i.icon-Capture{
+    position: absolute;
+    top: 6px;
+    right: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.task-compare-before-list>li,
+.task-compare-now-list>li{
+    margin-bottom: 8px;
+    height:280px;
+    overflow: hidden;
+}
+.task-compare-before-list img,
+.task-compare-now-list img {
+    cursor: pointer;
+    width: 100%;
+    height:280px;
+}
+.task-compare-before-list .capture-failed,
+.task-compare-now-list .capture-failed{
+    width:100%;
+    height:280px;
+    line-height: 280px;
+    font-size: 45px;
+    text-align: center;
+    cursor:default;
+    background: #edf0f5;
+    color:#999;
+}
+
+
+.task-compare-before-list>li{
+    width: 100%;
+    position: relative;
+}
+.task-compare-before-list>li .prev{
+    position: absolute;
+    top:0;
+    left: 8px;
+    width: 35px;
+    height: 240px;
+    display: none;
+    cursor:pointer;
+}
+.task-compare-before-list>li .next{
+    position: absolute;
+    top:0;
+    right: 8px;
+    width: 35px;
+    height: 240px;
+    display: none;
+    cursor:pointer;
+}
+.task-compare-before-list>li:hover .prev,
+.task-compare-before-list>li:hover .next{
+    display: block;
+}
+.task-compare-before-list  .prev.disabled,
+.task-compare-before-list  .next.disabled{
+    cursor: default;
+}
+.task-compare-before-list>li span>i{
+    margin: 124px auto 0 auto;
+    display: block;
+}
+.task-compare-before-list .prev.disabled i.reform-icon-prev,
+.task-compare-before-list .prev.disabled:hover i.reform-icon-prev{
+    background-position: -25px -150px;
+}
+.task-compare-before-list .next.disabled i.reform-icon-next,
+.task-compare-before-list .next.disabled:hover i.reform-icon-next {
+    background-position: -25px -116px;
+}
+.task-compare-before-list .prev:hover i.reform-icon-prev{
+    background-position: -88px -150px;
+}
+.task-compare-before-list .next:hover i.reform-icon-next {
+    background-position: -88px -116px;
+}
+.task-compare-before-list .pic-pages{
+    position: absolute;
+    color: #fff;
+    right: 15px;
+    bottom: 2px;
+}
+.task-compare-before-list .pic-pages>em{
+    color: #aaa;
+    font-style:normal;
+}
+.task-compare-before-item{
+    position: absolute;
+    height: 280px;
+    overflow: hidden;
+    width: 6000px;
+    left: 0;
+}
+.task-compare-before-item>li{
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.task-compare-now-list>li{
+    position: relative;
+}
+.task-compare-before-item>li .capture-info-bg,
+.task-compare-now-list>li .capture-info-bg{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background: url('../img/capture-info-bg-1px.png') repeat-x;
+    bottom: 0;
+}
+
+.capture-info-bg .capture-info{
+    position: absolute;
+    height: 40px;
+    font-size: 12px;
+    color: #fff;
+    bottom: -18px;
+    transition: bottom .3s linear;
+}
+.capture-info-bg .capture-info span{
+    display: block;
+    padding-left: 10px;
+    height: 20px;
+    line-height:20px;
+}
+
+.task-compare-before-list>li:hover .capture-info,
+.task-compare-now-list>li:hover .capture-info{
+    position: absolute;
+    bottom: 0;
+}
+    /* 批注容器 */
+.patrol-scrawl-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #edf1f5;
+    overflow: hidden;
+}
+
+/* 标注工具栏 */
+.patrol-scrawl-img .db-toolbar-box {
+    background-color: #edf1f5;
+}
+
+.patrol-scrawl-img .db-toolbar {
+    position: absolute;
+    left: 50%;
+    right: auto;
+    margin-left: -115px;
+}
+
+/* 删除截图按钮 */
+.patrol-scrawl-delete {
+    position: absolute;
+    bottom: 13px;
+    left: 24px;
+    z-index: 1;
+    height: 24px;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+
+.patrol-scrawl-delete:hover {
+    color: #ff7c34;
+}
+
+/* 完成涂鸦按钮 */
+.video-comment-complete {
+    position: absolute;
+    bottom: 13px;
+    right: 24px;
+    z-index: 1;
+    height: 24px;
+    font-size: 20px;
+    color: #5de37b;
+    cursor: pointer;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+}
+
+/* 完成涂鸦按钮tips */
+.video-comment-complete-tip {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left-color: #ff7300;
+    transform: scale(0);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+}
+
+.video-comment-complete-tip::before {
+    content: '保存涂鸦';
+    position: absolute;
+    top: -14px;
+    left: -76px;
+    display: inline-block;
+    width: 70px;
+    height: 28px;
+    line-height: 26px;
+    padding-left: 10px;
+    border: 1px solid #fa9a4b;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fa9a4b;
+    background-color: #fff;
+}
+
+.video-comment-complete-tip::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-left-color: #fff;
+}
+
+/* 完成按钮hover事件 */
+.video-comment-complete:hover {
+    color: #46f56d;
+}
+
+.video-comment-complete:hover .video-comment-complete-tip {
+    transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.task-status-dropdown .dropdown-menu {
+    width: 100px;
+}
+
+.patrol-count {
+    position: absolute;
+    display: none;
+    width: 25px;
+    top: 12px;
+    right: 17px;
+    height: 16px;
+    line-height: 14px;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 7px;
+    color: #87a3b1;
+    border:1px solid #87a3b1;
+    z-index: 10;
+}
+
+.opinion-form{
+    width:80px;
+    height:80px;
+}
+
+.opinion-form .btn-submit{
+    margin:0
+}
+
+.opinion-form .form-group{
+    margin-bottom:0;
+}
+
+.opinion-form .btn-cancel {
+    border: 1px solid #d0d0d0;
+}
+
+.opinion-opt .task-opinion textarea {
+    border-radius: 2px;
+}
+
+.opinion-opt .task-oprt {
+    text-align: right;
+}
+
+.opinion-opt .btn {
+    padding: 6px 12px;
+    width: 90px;
+    margin-left: 10px;
+}
+
+/*==== 考评详情 ====*/
+.cur-eval-detail .task-camera-imgs {
+    position: relative;
+    display: inline-block;
+    width: 246px;
+    height: 140px;
+    margin-right: 10px;
+}
+
+.cur-eval-detail .task-camera-imgs .capture-failed {
+    width: 246px;
+    height: 140px;
+}
+
+.cur-eval-detail .task-camera-imgs>img {
+    width: 246px;
+    height: 140px;
+}
+
+.cur-eval-detail .task-camera-imgs .capture-info-bg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: url('/views/common/img/capture-info-bg-1px.png') repeat-x;
+}
+
+.cur-eval-detail .task-camera-imgs .capture-info span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    padding-left: 6px;
+    font-size: 12px;
+}
+
+.cur-eval-detail .res-txt {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.cur-eval-detail .task-apply .radio-inline {
+    vertical-align: baseline;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.cur-eval-detail .radio-inline + .radio-inline {
+    margin-left: 20px;
+}
+
+.cur-eval-detail #tagContent>li {
+    display: block;
+    list-style: none;
+    width: 318px;
+    height: 22px;
+    line-height: 22px;
+    color: #B5B3AF;
+    border: 1px solid #FBF5E8;
+    border-radius: 4px;
+    background: #FBF5E8;
+    margin-bottom: 2px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.cur-eval-detail #tagContent>li.checked {
+    color: #FC7A24;
+    border: 1px solid #FC7A24;
+    background: #F9E8DD;
+}
+
+.cur-eval-detail .task-camera-imgs:hover .capture-info {
+    bottom: 0;
+}
+
+.task-apply{
+    padding: 20px 10px;
+}
+.cur-eval-detail .tag-content {
+    padding: 0 10px;
+}
+.cur-eval-detail .tag-content .tag-title {
+    display:inline-block;
+    margin-bottom: 6px;
+}
+
+.cur-eval-detail .tag-title i {
+    font-style: normal;
+}
+#chkNum {
+    color: #FC7A24;
+}
+
+.cur-eval-detail .tag-pagination {
+    display:inline-block;
+    float: right;
+    color: #cccccc;
+}
+
+.cur-eval-detail .tag-pagination i {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    background-color: #999999;
+}
+
+.cur-eval-detail .tag-pagination i.disabled {
+    pointer-events: none;
+    background-color: #EBEBEB;
+}
+
+/*==== 考评详情 ====*/

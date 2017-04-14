@@ -1,0 +1,97 @@
+{
+    "success": true,
+    "data": {
+        "paginator":{
+            "currentEnd":16,
+            "currentStart":1,
+            "end":16,
+            "firstPage":true,
+            "hasNextPage":true,
+            "hasPreviousPage":false,
+            "lastPage":false,
+            "page":1,
+            "pageSize":16,
+            "rowIndex":1,
+            "start":0,
+            "total":7
+        },
+        "results": [{
+            "dateStr": "周一(2016-05-16)",
+            "thisTeamRevenues": 888.0,
+            "proportion": 88.89,
+            "linkRelativeRevenues": 88.0,
+            "linkRelativeDifference": 800.0,
+            "linkRelativeGrowth": 909.09,
+            "yearOnYearRevenues": 0.0,
+            "yearOnYearDifference": 888.0,
+            "yearOnYearGrowth": 0.0
+        },
+        {
+            "dateStr": "周二(2016-05-17)",
+            "thisTeamRevenues": 111.0,
+            "proportion": 11.11,
+            "linkRelativeRevenues": 277.0,
+            "linkRelativeDifference": -166.0,
+            "linkRelativeGrowth": -59.93,
+            "yearOnYearRevenues": 0.0,
+            "yearOnYearDifference": 111.0,
+            "yearOnYearGrowth": 0.0
+        },
+        {
+            "dateStr": "周三(2016-05-18)",
+            "thisTeamRevenues": 0.0,
+            "proportion": 0.0,
+            "linkRelativeRevenues": 333.0,
+            "linkRelativeDifference": -333.0,
+            "linkRelativeGrowth": -100.0,
+            "yearOnYearRevenues": 0.0,
+            "yearOnYearDifference": 0.0,
+            "yearOnYearGrowth": 0.0
+        },
+        {
+            "dateStr": "周四(2016-05-19)",
+            "thisTeamRevenues": 0.0,
+            "proportion": 0.0,
+            "linkRelativeRevenues": 444.0,
+            "linkRelativeDifference": -444.0,
+            "linkRelativeGrowth": -100.0,
+            "yearOnYearRevenues": 0.0,
+            "yearOnYearDifference": 0.0,
+            "yearOnYearGrowth": 0.0
+        },
+        {
+            "dateStr": "周五(2016-05-20)",
+            "thisTeamRevenues": 0.0,
+            "proportion": 0.0,
+            "linkRelativeRevenues": 555.0,
+            "linkRelativeDifference": -555.0,
+            "linkRelativeGrowth": -100.0,
+            "yearOnYearRevenues": 0.0,
+            "yearOnYearDifference": 0.0,
+            "yearOnYearGrowth": 0.0
+        },
+        {
+            "dateStr": "周六(2016-05-21)",
+            "thisTeamRevenues": 0.0,
+            "proportion": 0.0,
+            "linkRelativeRevenues": 666.0,
+            "linkRelativeDifference": -666.0,
+            "linkRelativeGrowth": -100.0,
+            "yearOnYearRevenues": 0.0,
+            "yearOnYearDifference": 0.0,
+            "yearOnYearGrowth": 0.0
+        },
+        {
+            "dateStr": "周日(2016-05-22)",
+            "thisTeamRevenues": 0.0,
+            "proportion": 0.0,
+            "linkRelativeRevenues": 777.0,
+            "linkRelativeDifference": -777.0,
+            "linkRelativeGrowth": -100.0,
+            "yearOnYearRevenues": 0.0,
+            "yearOnYearDifference": 0.0,
+            "yearOnYearGrowth": 0.0
+        }
+        ]
+    }
+}

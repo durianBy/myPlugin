@@ -1,0 +1,46 @@
+<div class="modal-dialog w430" role="document">
+    <div class="modal-content">
+        <div class="modal-head-block">
+            <i class="modal-head-bg icon-LOGO"></i>
+            <div class="modal-head clearfix">
+                <h3 class="modal-title">关于</h3>
+                <a class="modal-close" data-dismiss="modal">×</a>
+            </div>
+            <div class="modal-head-content">
+                <div class="modal-logo col-xs-6">
+                    <span class="logo-icon  icon-LOGO"></span>
+                    <h2 class="logo-text">
+                        <script>
+                            $(".modal-logo .logo-text").html(platName);
+                        </script>
+                    </h2>
+                </div>
+                <section class="version-info col-xs-6"></section>
+            </div>
+        </div>
+        <div class="modal-body-block">
+            <section>警告：本计算机受版权法和国际条约保护，如未经授权而擅自复制和传播本程序部分或者全部，将受到严厉的民事和刑事制裁，并将在法律许可的范围内受到最大的起诉。</section>
+            <div class="upload-box">
+                <a class="close">×</a>
+                <h3>请重新导入授权许可文件</h3>
+                <!--<form id="inputFile-form">-->
+                    <div class="file-upload w350">
+                        <input class="file-value" type="text" name="license-fileValue">
+                        <div class="file-choose">
+                            <span class="divider"></span>
+                            <a class="a-link">选择文件</a>
+                        </div>
+                        <input class="file-upload w350" id="iep-licenseUploadField" name="licenseFile" type="file" onchange="getFileValue(this,'license-fileValue')"><!---->
+                    </div>
+                    <!--<input class="" id="iep-licenseUploadField" type="file" name="licenseFile" data-uploadUI >-->
+                <!--</form>-->
+                <!--data-uploadUI data-submit="#iep-licenseUploadBtn"-->
+                <span class="license-error"></span>
+                <button class="btn btn-orange" id="iep-licenseUploadBtn" type="button">上传</button>
+            </div>
+            <div class="modal-operate">
+                <button class="btn btn-orange" id="iep-newLicenseBtn" type="button">上传新的授权文件</button>
+            </div>
+        </div>
+    </div>
+</div>

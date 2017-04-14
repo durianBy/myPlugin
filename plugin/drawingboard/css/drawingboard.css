@@ -1,0 +1,281 @@
+.drawingboard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.db-toolbar-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.db-toolbar {
+    float: right;
+    height: 44px;
+    padding-top: 10px;
+    margin-right: 10px;
+}
+
+/* 操作按钮 */
+.db-toolbtn {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+    background-image: url("./images/icons.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+/* 铅笔 */
+.db-toolbtn.db-tool-pencil {
+    background-position: -10px -44px;
+}
+.db-toolbtn.db-tool-pencil:hover,
+.db-toolbtn.db-tool-pencil.active {
+    background-position: -418px -44px;
+}
+/* 长方形 */
+.db-toolbtn.db-tool-rect {
+    background-position: -44px -44px;
+}
+.db-toolbtn.db-tool-rect:hover,
+.db-toolbtn.db-tool-rect.active {
+    background-position: -452px -44px;
+}
+/* 椭圆 */
+.db-toolbtn.db-tool-ellipse {
+    background-position: -78px -44px;
+}
+.db-toolbtn.db-tool-ellipse:hover,
+.db-toolbtn.db-tool-ellipse.active {
+    background-position: -486px -44px;
+}
+/* 文本 */
+.db-toolbtn.db-tool-text {
+    background-position: -146px -44px;
+}
+.db-toolbtn.db-tool-text:hover,
+.db-toolbtn.db-tool-text.active {
+    background-position: -554px -44px;
+}
+/* 清除画布 */
+.db-toolbtn.db-tool-clean {
+    background-position: -180px -44px;
+}
+.db-toolbtn.db-tool-clean:hover {
+    background-position: -588px -44px;
+}
+/* 完成 */
+.db-toolbtn.db-tool-complete {
+    background-position: -112px -78px;
+}
+.db-toolbtn.db-tool-complete:hover {
+    background-position: -180px -78px;
+}
+
+.db-body-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+}
+.db-body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.db-canvas-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.db-canvas-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: #fff;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, .7);
+}
+
+.img-canvas,
+.paint-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.picture-canvas {
+    z-index: 1;
+}
+
+.painting-canvas {
+    z-index: 2;
+}
+
+.paint-cursor {
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+    opacity: .4;
+    z-index: 10;
+}
+
+.db-textBox {
+    position: absolute;
+    z-index: 3;
+    border: 1px dashed transparent;
+}
+
+.dash-border {
+    border-color: #39f;
+}
+
+.db-textarea-wrap {
+    position: relative;
+    width: 160px;
+    min-width: 50px;
+    padding: 5px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.db-textarea,
+.db-textarea-clone {
+    height: 1.5em;
+    font-size: 14px;
+    line-height: 1.5em;
+    font-family: "Microsoft YaHei";
+    border: 0;
+    outline: none;
+    resize: none;
+}
+
+.db-textarea {
+    width: 100%;
+    min-height: 1.5em;
+    background: transparent;
+    overflow: hidden;
+}
+
+.db-textarea-clone {
+    position: absolute;
+    left: -10000px;
+    top: -10000px;
+    overflow-y: scroll;
+}
+
+.textbox-handles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    display: none;
+}
+
+.dash-border .textbox-handles {
+    display: block;
+}
+
+.textbox-handles .handle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    z-index: 10;
+}
+
+.textbox-handles .dragbar {
+    position: absolute;
+    z-index: 1;
+}
+
+.handle.ord-n {
+    top: -4px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.handle.ord-s {
+    bottom: -4px;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.handle.ord-e {
+    top: 50%;
+    right: -4px;
+    margin-top: -3px;
+}
+
+.handle.ord-w {
+    top: 50%;
+    left: -4px;
+    margin-top: -3px;
+}
+
+.handle.ord-nw {
+    top: -4px;
+    left: -4px;
+}
+
+.handle.ord-ne {
+    top: -4px;
+    right: -4px;
+}
+
+.handle.ord-sw {
+    left: -4px;
+    bottom: -4px;
+}
+
+.handle.ord-se {
+    right: -4px;
+    bottom: -4px;
+}
+
+.dragbar.ord-n {
+    top: -4px;
+    left: 0;
+    right: 0;
+    height: 8px;
+}
+
+.dragbar.ord-s {
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 8px;
+}
+
+.dragbar.ord-w {
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+}
+
+.dragbar.ord-e {
+    right: -4px;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+}
+
+.db-error-img {
+    display: none;
+}

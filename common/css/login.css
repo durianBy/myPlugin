@@ -1,0 +1,369 @@
+﻿html,
+body {
+    height: 100%;
+    background: #073765 url(../img/login-bg.jpg) center center no-repeat;
+}
+
+.changePwdPage,
+.licensePage {
+    background: #073765 url(../img/login-bg-other.jpg) center center no-repeat;
+}
+
+.login {
+    position: relative;
+    margin: 0 auto;
+    width: 302px;
+    height: 100%;
+    z-index: 10;
+}
+
+/*初始化input框*/
+#iep-login.login input,
+#iep-login.login button {
+    width: 214px;
+    height: 32px;
+}
+
+#iep-login.login input {
+    padding: 6px 8px;
+}
+
+.login-pwd {
+    position: relative;
+    margin: 0 auto;
+    width: 480px;
+    height: 100%;
+}
+
+.login-content-bg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -660px;
+    width: 302px;
+    height: 881px;
+    background: url(../img/drop-card.png) no-repeat;
+}
+
+.login-pwdContent-bg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -168px;
+    width: 100%;
+    height: 338px;
+}
+
+.login-content {
+    position: absolute;
+    top: 479px;
+    padding-top: 40px;
+    width: 100%;
+    height: 402px;
+}
+
+.login-pwd-content {
+    border: solid 7px rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .2);
+    background-clip: padding-box;
+    border-radius: 7px;
+}
+
+.login-pwd-content .pwd-form-bg {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 7px;
+}
+
+.login-pwd-content .pwd-form-bg {
+    padding-bottom: 20px;
+    background: #fff;
+}
+
+.login-pwd-content .help-block {
+    margin-top: 4px;
+    width: 216px;
+    line-height: 14px;
+}
+
+.login-content .login-content-head {
+    height: 109px;
+}
+
+.login-content .login-content-head > div {
+    margin-top: 10px;
+}
+
+.login-content .login-logo {
+    margin: 0 auto;
+    width: 50px;
+}
+
+.login-logo img {
+    width: 50px;
+}
+
+.welcome {
+    font: bold 16px/20px "Microsoft Yahei";
+    color: #fff;
+    text-align: center;
+}
+
+.welcome-pwd {
+    font: bold 14px/20px "Microsoft Yahei";
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 7px 10px;
+}
+.welcome-pwd .back{
+    float:right;
+    color:#fff;
+    font-size:18px;
+}
+.login-form-bg {
+    padding: 0 7px 7px 7px;
+    background: rgba(255, 255, 255, .2);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.login-form {
+    padding: 20px 0;
+    height: 100%;
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+.login-form .login-form-group {
+    position: relative;
+    width: 216px;
+    margin: 0 auto 14px;
+}
+
+#iep-pwd-form .form-group {
+    margin-bottom: 20px;
+}
+
+#iep-pwd-form .form-group-pwd {
+    margin-top: 40px;
+}
+
+.login-content div input {
+    width: 100%;
+    -webkit-box-shadow: 0 0 1000px 1000px rgb(255, 255, 255) inset;
+}
+
+.login-content div input:focus {
+    -webkit-box-shadow: 0 0 1000px 1000px rgb(255, 255, 255) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+
+}
+
+.login-content div.img-box input {
+    width: 22%;
+    line-height: 34px;
+    padding-right: 80px;
+}
+
+/*验证码图片*/
+.check-img {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    padding: 0;
+    width: 86px;
+    height: 26px;
+    cursor: pointer;
+}
+
+#iep-checkImg-group .colLine {
+    position: absolute;
+    overflow: hidden;
+    right: 93px;
+    top: 8px;
+    width: 1px;
+    height: 16px;
+    background: #dcdcdc;
+}
+
+/*.login-form .login-form-btn{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -108px;
+}*/
+.login-form button {
+    border-radius: 2px;
+    padding: 6px;
+    font-family: "Microsoft Yahei";
+    font-size: 15px;
+}
+
+/*强制修改密码—START—*/
+.changePwdPage input {
+    width: 216px;
+    height: 26px;
+}
+
+.login-pwd-errorMsg {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+
+.login-license-errorMsg {
+    padding: 0;
+    margin-top: 30px;
+}
+
+.login-pwd-errorMsg > span {
+    color: #fcb815;
+    font-size: 34px;
+}
+
+.login-license-errorMsg > span {
+    color: #5C9AEF;
+}
+
+.login-license-errorMsg span {
+    vertical-align: middle;
+    top: 0;
+}
+
+.login-pwd-errorMsg span.text {
+    font-size: 14px;
+    color: #444;
+}
+
+.form-pwd-btn button {
+    border-radius: 5px;
+    padding: 6px;
+    width: 140px;
+    font-family: "Microsoft Yahei";
+    font-size: 14px;
+}
+
+.change-pwd-msg {
+    position: absolute;
+    top: 116px;
+    width: 94%;
+    text-align: center;
+    color: red;
+}
+
+.login-pwd .col-sm-8 {
+    padding-left: 0;
+}
+
+.login-pwd .login-form label {
+    padding-right: 10px;
+    font-size: 12px;
+    color: #444;
+}
+
+.login-pwd .login-form .help-block {
+    margin: 0;
+}
+
+/*强制修改密码—END—*/
+
+/*license上传*/
+.license-content {
+    margin: 10px 70px;
+}
+
+.login-licenseContent-bg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -169px;
+    width: 480px;
+    height: 320px;
+}
+
+.login-errorMsg {
+    /*position: absolute;*/
+    bottom: 37px;
+    text-align: center;
+}
+
+.login-form .login-form-group-btn {
+    position: relative;
+    margin-top: 30px;
+}
+
+.login-form .form-license-btn {
+    margin-top: 34px;
+    padding: 10px 180px;
+}
+
+/*登录页底部样式---START---*/
+.login-versionInfo {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 18px 30px;
+    font-size: 12px;
+    color: #fff;
+    background: rgba(0, 0, 0, .2);
+    z-index: 0;
+}
+
+.login-versionInfo > div {
+    display: inline-block;
+    line-height: 26px;
+}
+
+.login-versionInfo .system-Info {
+    float: right;
+}
+
+.login-versionInfo .system-Info > div {
+    display: inline-block;
+    margin-left: 30px;
+    line-height: 26px;
+}
+
+.login-versionInfo .system-Info .install-certificate {
+    color: #fadb4b;
+    font-size: 12px;
+}
+
+.downLoad-certificate {
+    display: inline-block;
+    margin-left: 15px;
+    padding: 6px 18px;
+    line-height: 1em;
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 12px;
+    color: #fdffff;
+}
+
+.downLoad-certificate:hover {
+    background: rgba(250, 219, 75, .2);
+    border-color: rgba(250, 219, 75, .6);
+    color: #fadb4b;
+}
+
+.downLoad-certificate:visited{
+    color: #fff;
+}
+
+.login-versionInfo .hikLogo {
+    display: inline-block;
+    margin-right: 10px;
+    width: 96px;
+    height: 12px;
+    background: url(../img/hik-logo.png) no-repeat;
+}
+
+.login-versionInfo .login-copyRight-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.login-licenseInfo span {
+    margin: 0 10px;
+}

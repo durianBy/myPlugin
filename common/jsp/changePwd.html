@@ -1,0 +1,36 @@
+<div class="modal-dialog w430" role="document">
+    <div class="modal-content">
+        <div class="dialog-header">
+            <h3>修改密码</h3>
+            <a class="close" data-dismiss="modal">×</a>
+        </div>
+        <div class="dialog-body">
+            <form id="iep-changePwd-form" class="form-horizontal form-static">
+                <div class="form-group">
+                    <label class="col-xs-4 control-label">原密码</label>
+                    <div class="col-xs-8">
+                        <input class="form-control" autocomplete="off" type="password" name="oldPwd" maxlength="16">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-4 control-label">新密码</label>
+                    <div class="col-xs-8">
+                        <input class="form-control" autocomplete="off" type="password" id="newPwd" name="newPwd" data-role="pwdStrength" maxlength="16">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-4 control-label">确认密码</label>
+                    <div class="col-xs-8">
+                        <input class="form-control" type="password" autocomplete="off" name="pwdIdentical" maxlength="16">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-xs-4 control-label"></label>
+                    <div class="col-xs-8">
+                        <button class="btn btn-orange w140" type="submit">提交</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

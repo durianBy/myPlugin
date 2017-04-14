@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${ssoLoginSessionAttr.softwareName}</title>
+    <link rel='stylesheet' type='text/css' href='../javascript/bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='../javascript/font-icon/style.css'>
+    <link rel='stylesheet' type='text/css' href='../javascript/libs/css/icons.css'>
+    <link rel='stylesheet' type='text/css' href='../javascript/plugin/ztree/css/zTreeStyle/zTreeStyle.css'>
+    <link rel='stylesheet' type='text/css' href='../javascript/plugin/flexigrid/css/flexigrid.css'>
+    <link rel='stylesheet' type='text/css' href='../javascript/libs/css/common.css'>
+    <link rel='stylesheet' type='text/css' href='../javascript/ui/css/HikLY.css'>
+    <link rel='stylesheet' type='text/css' href='../javascript/ui/css/layout.css'>
+    <link rel='stylesheet' type='text/css' href='../javascript/plugin/formvalidator/style/validator.css'>
+    <link rel='stylesheet' type='text/css' href='../views/home/css/main.css'>
+    <link rel='icon' href='../views/favicon.ico' type='image/x-ico' />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="../javascript/libs/html5shiv.js"></script>
+      <script src="../javascript/libs/respond.js"></script>
+    <![endif]-->
+</head>
+    <script type="text/javascript" src="../javascript/i18n/message_<%=i18nLocal %>.js"></script>
+    <script type="text/javascript" src="../javascript/jquery/jquery.js"></script>
+    <script type="text/javascript" src="../javascript/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../javascript/seajs/sea.js"></script>
+    <script type="text/javascript" src="../javascript/ui/lang/HikLY_<%=i18nLocal %>.js"></script>
+    <script type="text/javascript" src="../javascript/seajs/sea.js"></script>
+    <script type="text/javascript" src="../views/loader.js"></script>
+    <script type="text/javascript" id="headJsp"></script>
+    <script type="text/javascript">
+    var sysParam = {
+        userName: '${ssoLoginSessionAttr.userLoginPojo.user_name}',
+        userId: '${ssoLoginSessionAttr.userLoginPojo.userId}',
+        spRole: '${ssoLoginSessionAttr.adminRoles }',
+        adminUser: '${ssoLoginSessionAttr.adminUser}',
+        roleIds: '${ssoLoginSessionAttr.roles }',
+        functionCodes: '${ssoLoginSessionAttr.functionCodes }',
+        softwareName: '${ssoLoginSessionAttr.softwareName}',
+        isCasecade:${ssoLoginSessionAttr.casecade},
+        licenseProjectSerializeType: '${ssoLoginSessionAttr.licenseProjectSerializeType}',
+        unSafePassword:'${ssoLoginSessionAttr.unSafePassword}'
+    };
+    if (!window.debugurl) {
+        window.debugurl = "";
+    }
+
+    if (!window.basePath) {
+        window.basePath = "";
+    }
+
+    var l = debugurl.length;
+
+    if (debugurl.substring(l - 3) == ':80') {
+        debugurl = debugurl.replace(':80', '')
+    }
+
+    var url = "";
+    if (debugurl) {
+        url = debugurl + "/views/home/js/head_data";
+    } else {
+        url = debugurl + "../views/home/js/head_data"
+    }
+
+
+    seajs.use(url, function(head) {
+        var h = new head();
+        h.init();
+    });
+    </script>
+    <div id="tempHead" style="background-color:#f74248;height: 60px;width:100%;">
+        &nbsp;
+    </div>
+
+    <body>
